@@ -1,0 +1,6 @@
+﻿<ul>
+    @foreach(var site in Sites)
+    {
+        <li><a href="@site.Url" target="_blank">@site.Name (@site.Description)</a></li>        
+    }
+</ul>
