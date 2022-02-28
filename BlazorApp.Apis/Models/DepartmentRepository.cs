@@ -1,4 +1,5 @@
 ﻿using BlazorApp.Models.pragimtech;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp.Apis.Models
 {
@@ -11,15 +12,15 @@ namespace BlazorApp.Apis.Models
             this.appDbContext = appDbContext;
         }
 
-        public Department GetDepartment(int departmentId)
+        public async Task<Department> GetDepartment(int departmentId)
         {
-            return appDbContext.Departments
-                .FirstOrDefault(d => d.DepartmentId == departmentId);
+            return await appDbContext.Departments
+                .FirstOrDefaultAsync(d => d.DepartmentId == departmentId);
         }
 
-        public IEnumerable<Department> GetDepartments()
+        public async Task<IEnumerable<Department>> GetDepartments()
         {
-            return appDbContext.Departments;
+            return await appDbContext.Departments.ToListAsync();
         }
     }
 }
