@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorApp.Models\BlazorApp.Models.csproj" />
+    <ProjectReference Include="..\Pragim.Components\Pragim.Components.csproj" />
   </ItemGroup>
 
 </Project>

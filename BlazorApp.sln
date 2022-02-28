@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Apis", "BlazorApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.SingleSignOn", "BlazorApp.SingleSignOn\BlazorApp.SingleSignOn.csproj", "{369247F6-FCB8-4D60-9682-876E7C7287B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pragim.Components", "Pragim.Components\Pragim.Components.csproj", "{988C2C0C-1C94-4BD8-B290-AAA6359E3A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{369247F6-FCB8-4D60-9682-876E7C7287B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369247F6-FCB8-4D60-9682-876E7C7287B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369247F6-FCB8-4D60-9682-876E7C7287B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988C2C0C-1C94-4BD8-B290-AAA6359E3A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988C2C0C-1C94-4BD8-B290-AAA6359E3A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988C2C0C-1C94-4BD8-B290-AAA6359E3A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988C2C0C-1C94-4BD8-B290-AAA6359E3A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
