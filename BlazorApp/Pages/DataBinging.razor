@@ -1,0 +1,41 @@
+﻿@page "/databinging"
+
+
+<!-- Page Content-->
+<section class="py-5">
+    <div class="container px-5 my-5">
+        <div>
+            <b>Name :</b> @Name
+        </div>
+        <div>
+            <b>Name with salutation:</b> @(Gender == "Male" ? $"Mr. {Name}" : $"Miss. {Name}")
+        </div>
+        <div>
+            <b>Name :</b> <input value="@Name" />
+        </div>
+        <div>
+            <b>Name(onchanged) :</b> <input value="@Name" @onchange="@(e => { Name = e.Value.ToString(); })" />
+        </div>
+        <div>
+            <b>Name(bind) :</b> <input @bind="Name" />
+        </div>
+        <div>
+            <b>Name(bind:event) :</b> <input @bind="Name" @bind:event="oninput" />
+        </div>
+        <hr />
+        <div>
+            <b>Colour :</b> <input @bind="Colour" />
+
+            <div @bind-style="Colour" @bind-style:event="onchange">
+                <h3>The background colour of this text changes</h3>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <textarea @bind="Description" @bind:event="oninput" style="width:500px" />
+        </div>
+        <div>
+            Count : @Description.Length
+        </div>
+    </div>
+</section>

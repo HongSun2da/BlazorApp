@@ -11,11 +11,26 @@ namespace BlazorApp.Pages
 
         public IEnumerable<Employee>? Employees { get; set; }
 
+        public bool ShowFooter { get; set; } = true;
+        protected int SelectedEmployeesCount { get; set; } = 0;
+
         protected override async Task OnInitializedAsync()
         {
             Employees = (await EmployeeService.GetEmployees()).ToList();
 
             //await Task.Run(LoadEmployees);
+        }
+
+        protected void EmployeeSelectionChanged(bool isSelected)
+        {
+            if (isSelected)
+            {
+                SelectedEmployeesCount++;
+            }
+            else
+            {
+                SelectedEmployeesCount--;
+            }
         }
 
         /*
