@@ -5,17 +5,17 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{20595BE0-26D2-48E2-961B-096D3EF63F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Admin", "BlazorApp.Admin\BlazorApp.Admin.csproj", "{2F99B52F-C830-417B-A79E-6DAE9BDFDC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Admin", "BlazorApp.Admin\BlazorApp.Admin.csproj", "{2F99B52F-C830-417B-A79E-6DAE9BDFDC66}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BlazorApp.SqlServer", "BlazorApp.SqlServer\BlazorApp.SqlServer.sqlproj", "{D674C2EE-9637-4126-8B9E-4861EB08F0DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Models", "BlazorApp.Models\BlazorApp.Models.csproj", "{A9488EC5-7EBA-48AC-ADF6-162305290230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Models", "BlazorApp.Models\BlazorApp.Models.csproj", "{A9488EC5-7EBA-48AC-ADF6-162305290230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Models.Tests", "BlazorApp.Models.Tests\BlazorApp.Models.Tests.csproj", "{80DAD863-2CE6-4026-8A06-1B838E69E681}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Models.Tests", "BlazorApp.Models.Tests\BlazorApp.Models.Tests.csproj", "{80DAD863-2CE6-4026-8A06-1B838E69E681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Apis", "BlazorApp.Apis\BlazorApp.Apis.csproj", "{B3B56527-31F5-4989-A93D-8F705E06B110}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Apis", "BlazorApp.Apis\BlazorApp.Apis.csproj", "{B3B56527-31F5-4989-A93D-8F705E06B110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.SingleSignOn", "BlazorApp.SingleSignOn\BlazorApp.SingleSignOn.csproj", "{369247F6-FCB8-4D60-9682-876E7C7287B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.SingleSignOn", "BlazorApp.SingleSignOn\BlazorApp.SingleSignOn.csproj", "{369247F6-FCB8-4D60-9682-876E7C7287B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
