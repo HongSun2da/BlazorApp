@@ -1,16 +1,24 @@
 ﻿using BlazorApp.Models.pragimtech;
+using BlazorApp.Services;
+using Microsoft.AspNetCore.Components;
 
 namespace BlazorApp.Pages
 {
     public partial class EmployeeList
     {
+        [Inject]
+        public IEmployeeService EmployeeService { get; set; }
+
         public IEnumerable<Employee>? Employees { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            await Task.Run(LoadEmployees);
+            Employees = (await EmployeeService.GetEmployees()).ToList();
+
+            //await Task.Run(LoadEmployees);
         }
 
+        /*
         private void LoadEmployees()
         {
             // System.Threading.Thread.Sleep(3000);
@@ -65,5 +73,6 @@ namespace BlazorApp.Pages
 
             Employees = new List<Employee> { e1, e2, e3, e4 };
         }
+        */
     }
 }
